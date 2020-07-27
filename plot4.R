@@ -30,10 +30,11 @@ class(household$datetime)
 dev_null <- Sys.setlocale("LC_TIME", "english")
 png(filename="plot4.png", width=480, height=480,  type="cairo")
 
-par(mar = c(3,4,2,2), mfrow = c(2,2), oma = c(0, 0, 0,0))
+par(mar = c(4,4,2,2), mfrow = c(2,2))
 with(household, plot(datetime,Global_active_power, 
                      type = "l",
                      ylab = "Global active power",
+                     xlab = "",
                      cex.lab = 0.9,
                      cex.axis =0.9))
 
@@ -47,6 +48,7 @@ with(household, plot(datetime,Voltage,
 with(household, plot(datetime,Sub_metering_1, 
                      type = "l",
                      ylab = "Energy sub metering",
+                     xlab = "",
                      cex.lab = 0.9,
                      cex.axis =0.9))
 with(household, lines(datetime, Sub_metering_2,
@@ -66,3 +68,4 @@ with(household, plot(datetime,Global_reactive_power,
                      cex.axis =0.9))
 
 dev.off()
+
