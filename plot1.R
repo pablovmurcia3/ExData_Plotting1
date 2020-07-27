@@ -28,7 +28,7 @@ class(household$datetime)
                                 # Plot 1 #
 ################################################################################
 png(filename="plot1.png", width=480, height=480,  type="cairo")
-par(mfrow = c(1,1),mar = c(3,6,2,4))
+par(mfrow = c(1,1),mar = c(3,4,2,2))
 hist(household$Global_active_power, xlab = "Global active power (kilowatt)",
      main ="Global active power", 
      col = "red",
