@@ -25,7 +25,7 @@ household <- cbind(datetime, household)
 class(household$datetime)
 
 ################################################################################
-# Plot 3 #
+                                # Plot 4 #
 ################################################################################
 dev_null <- Sys.setlocale("LC_TIME", "english")
 png(filename="plot4.png", width=480, height=480,  type="cairo")
